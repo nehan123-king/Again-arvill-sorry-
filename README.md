@@ -1,3 +1,7 @@
+
+
+
+
 local HttpService = game:GetService("HttpService")
 
 -- 1. YOUR PRIVATE KEY (Change this if you regenerated it!)
@@ -35,7 +39,7 @@ else
     warn("Invalid License! Buy access at your website.")
     -- This stops the script from loading further
     return 
-end -- 1. YOUR API SETTINGS (Keep the Secret Key private!)
+end-- 1. YOUR API SETTINGS (Keep the Secret Key private!)
 local HttpService = game:GetService("HttpService")
 local ProductSecretKey = "prod_sk_xe1ym_e577a4f84cd69026ec4bffec8ec9c05e9dba7761" 
 
@@ -71,11 +75,6 @@ end
 print("Success! Your script is now running.")
 
 -- All your game logic, functions, and features go down here...
-
-
-
-
-
 repeat wait() until game:IsLoaded()
 
 local wait = task.wait
@@ -251,7 +250,7 @@ local Config = {
 	Description = "Lifetime key access is available for a one-time payment of $15 via solixhub.com",
 	Linkvertise = "https://ads.luarmor.net/get_key?for=Solixhub_Free_KeySystem-OWlLHDMCHADk",
 	Shrink = "https://ads.luarmor.net/get_key?for=Solix_Free_Keysystems-pqJCGTqnTsng",
-	Discord = "https://discord.gg/86K2TafN",
+	Discord = "https://discord.gg/KtaTC9Snas",
 	Shop = "https://payhip.com/b/xe1ym",
 }
 
@@ -882,3 +881,4 @@ task.spawn(function()
         end
     end
 end)
+
