@@ -1,4 +1,4 @@
-local script_to_encode = [[
+
 
 
 repeat wait() until game:IsLoaded()
@@ -805,35 +805,6 @@ task.spawn(function()
                 end
             end
         end
-    end
-end)
-
-
-
-]]
-
-local function encode(str)
-    local result = {}
-    for i = 1, #str do
-        result[#result+1] = string.byte(str:sub(i,i))
-    end
-    return table.concat(result, ",")
 end
 
-local encoded = encode(script_to_encode)
-
-local final = [[
-local a="]]..encoded..[["
-
-local function d(s)
-    local t={}
-    for n in string.gmatch(s,"%d+") do
-        t[#t+1]=string.char(n)
-    end
-    return table.concat(t)
-end
-
-loadstring(d(a))()
-]]
-
-print(final)
+  
