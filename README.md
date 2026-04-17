@@ -1,6 +1,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 repeat wait() until game:IsLoaded()
 
 local wait = task.wait
@@ -176,8 +188,8 @@ local Config = {
 	Description = "Lifetime key access is available for a one-time payment of $15 via solixhub.com",
 	Linkvertise = "https://ads.luarmor.net/get_key?for=Solixhub_Free_KeySystem-OWlLHDMCHADk",
 	Shrink = "https://ads.luarmor.net/get_key?for=Solix_Free_Keysystems-pqJCGTqnTsng",
-	Discord = "https://discord.gg/KtaTC9Snas",
-	Shop = "https://payhip.com/b/xe1ym",
+	Discord = "https://discord.gg/86K2TafN",
+	Shop = "https://solixhub.com/",
 }
 
 local Theme = {
@@ -648,12 +660,11 @@ local function ValidateKey(key)
 				or game_id == "9363735110" -- Escape Tsunami For Brainrots!
 				or game_id == "9509842868" -- Garden Horizons
 				or game_id == "5130394318" -- Bizarre Lineage
-			)
+			     	)
 				and Workspace:GetAttribute("low") then
 			plr:Kick("This executor is not supported for this game.")
 		end
-
-		pcall(function()
+				Function()
 			luarmor_api.load_script()
 		end)
 
@@ -805,6 +816,6 @@ task.spawn(function()
                 end
             end
         end
-end
+    end
+end)
 
-  
